@@ -95,7 +95,7 @@ namespace AudioPlayer.Controller
         /// <returns></returns>
         private static string[] SplitString(string content)
         {
-            return content.Split(new string[] { LINE }, StringSplitOptions.None);
+            return content.Split(Environment.NewLine.ToCharArray());//new string[] { LINE }, StringSplitOptions.None);
         }
     }
 }
