@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <!--半径-->
+  <item name="radius" value="3.5" />
+  <!--x轴偏移-->
+  <item name="offsetX" value="0" />
+  <!--y轴偏移-->
+  <item name="offsetY" value="0.7" />
+  <!--可视化数据数量-->
+  <item name="audioDataCount" value="128" />
+  <!--线宽-->
+  <item name="lineWidth" value="0.02" />
+  <!--最小高度-->
+  <item name="minHight" value="0.14" />
+  <!--最大高度-->
+  <item name="maxHight" value="1.4" />
+  <!--亮度-->
+  <item name="colorBrightness" value="3.4" />
+  <!--主颜色-->
+  <item name="AlphaEdge" value="#0000FF" />
+  <!--次要颜色-->
+  <item name="viceColor" value="#AC85DF" />
+  <!--更新间隔-->
+  <item name="updateInterval" value="0.08" />
+  <!--放大因子-->
+  <item name="amplificationFactor" value="14" />
+  <!--旋转速度-->
+  <item name="rotateSpeed" value="10" />
+  <!--基础字体颜色-->
+  <item name="baseFontColor" value="#323232" />
+  <!--当前字体颜色-->
+  <item name="currentFontColor" value="#A3FF06" />
+  <!--字体大小-->
+  <item name="fontSize" value="30" />
+</items>
