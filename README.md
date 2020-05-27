@@ -1,7 +1,7 @@
 # AudioPlayer
 ===========================
 该工程是一个基于Unity2018.3.13开发的简易音频播放器，支持歌词同步+音频可视化+MV同步……
-![AudioPlayer](https://github.com/xuchaoqvn/Unity/blob/master/Textures/AudioPlayer.gif "AudioPlayer")  
+![AudioPlayer](https://github.com/xuchaoqvn/AudioPlayer/blob/master/Textures/AudioPlayer.gif "AudioPlayer")  
 
 ****
 ## 目录
@@ -25,7 +25,7 @@ audioSource.GetSpectrumData(samples, 0, FFTWindow.Blackman);
 
 ### 格式说明
 在StreamingAssets文件夹下四个文件夹：
-![StreamingAssets](https://github.com/xuchaoqvn/Unity/blob/master/Textures/StreamingAssets.jpg "StreamingAssets")  
+![StreamingAssets](https://github.com/xuchaoqvn/AudioPlayer/blob/master/Textures/StreamingAssets.jpg "StreamingAssets")  
 其中，
 Audios存放的是音频，支持的格式为：`.wav`、`.mp3`、`.ogg`、`.aif`，你没看错，支持mp3，后边说明；  
 Configs文件夹的是配置文件（xml格式）；  
@@ -74,7 +74,7 @@ Movies文件夹存放时的后缀名为.MP4的MV视频;
 ```
 注意：可视化数量只能是2的幂（64、128、256、512）；颜色使用的是16进制表示的（#FFFFFF）
 设置如下：
-![Setting](https://github.com/xuchaoqvn/Unity/blob/master/Textures/Setting.gif "Setting")  
+![Setting](https://github.com/xuchaoqvn/AudioPlayer/blob/master/Textures/Setting.gif "Setting")  
 
 ### 歌词的编码
 关于.lrc歌词文件读取的编码，在unity中读取后显示的是一堆乱码，由于Unity的中文是utf-8,在查找解决方案时，大部分时通过另存来改变编码；但假如文件过多，基本不太可能去单独一个一个去处理，我尝试通过utf-8和默认的编码去处理，但结果依然是乱码，最后的解决方法如下：  
@@ -109,7 +109,7 @@ for (int i = 0; i < parameter.AudioDataCount; i++)
 }
 ```
 这样的后果是导致每生成一个，就多一个DrawCall,最后查询到通过Renderer.Material进行参数传递，导致Unity会自动克隆出一个新的Material,避免方法是通过Renderer.SharedMaterial进行传参，同时修改PlayerSettings下的Dynamic Batching。
-![Dynamic Batching](https://github.com/xuchaoqvn/Unity/blob/master/Textures/DynamicBatching.jpg "Dynamic Batching")  
+![Dynamic Batching](https://github.com/xuchaoqvn/AudioPlayer/blob/master/Textures/DynamicBatching.jpg "Dynamic Batching")  
 
 ### 收获和遗憾
 这个工程是本人比较认真去写的，毕竟是刚工作时想写的程序，在这个工程里比较完善了一套简单的用于交互的UI框架（虽然现在没写），收获还是可以的；
