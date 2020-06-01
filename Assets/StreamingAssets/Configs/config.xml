@@ -7,7 +7,7 @@
   <!--y轴偏移-->
   <item name="offsetY" value="0.7" />
   <!--可视化数据数量-->
-  <item name="audioDataCount" value="128" />
+  <item name="audioDataCount" value="64" />
   <!--线宽-->
   <item name="lineWidth" value="0.02" />
   <!--最小高度-->
@@ -19,7 +19,7 @@
   <!--主颜色-->
   <item name="AlphaEdge" value="#0000FF" />
   <!--次要颜色-->
-  <item name="viceColor" value="#AC85DF" />
+  <item name="viceColor" value="#00FF00" />
   <!--更新间隔-->
   <item name="updateInterval" value="0.08" />
   <!--放大因子-->
